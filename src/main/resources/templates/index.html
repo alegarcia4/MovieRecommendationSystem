@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Movie Recommendation</title>
+</head>
+<body>
+<h1>Welcome to Ale's Movie Recommendation System</h1>
+<form action="/recommend" method="get">
+    <label for="genre">What genre of movie would you like to watch?</label>
+    <select id="genre" name="genre">
+        <option value="action">Action</option>
+        <option value="horror">Horror</option>
+        <option value="sci-fi">Sci-Fi</option>
+        <option value="romance">Romance</option>
+        <option value="docudrama">DocuDrama</option>
+        <option value="crime">Crime</option>
+        <option value="mystery">Mystery</option>
+        <option value="thriller">Thriller</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="war">War</option>
+        <option value="comedy">Comedy</option>
+    </select>
+    <button type="submit">Get Recommendation</button>
+</form>
+</body>
+</html>

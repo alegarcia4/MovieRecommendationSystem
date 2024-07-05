@@ -54,6 +54,7 @@ public class MovieRecommendationController {
         return "index"; // The name of your main HTML file without the extension
     }
 
+    //changed from a hashmap
     @GetMapping("/recommend")
     public String recommend(@RequestParam String genre, Model model) {
         String movieTitle = MovieTitleGenerator.getRandomMovieTitle(genre.toLowerCase());
